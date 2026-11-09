@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | SecureAuth</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="dashboard-wrapper">
+
+        <div class="success-card">
+
+            <div class="success-icon">
+                <i class="fa-solid fa-check"></i>
+            </div>
+
+            <span class="success-tag">
+                AUTHENTICATION SUCCESSFUL
+            </span>
+
+            <h1>Login Successful!</h1>
+
+            <p>
+                Welcome back, <strong id="userName">User</strong>!
+                You have successfully logged in to your account.
+            </p>
+
+            <div class="user-info">
+
+                <div class="user-avatar">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div>
+                    <h3 id="displayName">User</h3>
+                    <span id="userEmail">Loading email...</span>
+                </div>
+
+            </div>
+
+            <button id="logoutBtn" class="logout-btn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+            </button>
+
+            <div class="dashboard-footer">
+                <i class="fa-solid fa-shield-halved"></i>
+                Secured by Firebase Authentication
+            </div>
+
+        </div>
+
+    </main>
+
+    <script type="module" src="js/dashboard.js"></script>
+
+</body>
+</html>

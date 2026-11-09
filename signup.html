@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | SecureAuth</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <main class="auth-wrapper">
+
+        <!-- LEFT SECTION -->
+
+        <section class="hero-section">
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+
+                <span>SecureAuth</span>
+
+            </div>
+
+
+            <div class="hero-content">
+
+                <span class="hero-tag">
+                    <i class="fa-solid fa-user-shield"></i>
+                    Create Your Account
+                </span>
+
+                <h1>
+                    Start your<br>
+                    secure journey.
+                </h1>
+
+                <p>
+                    Join us and experience a secure,
+                    reliable and seamless authentication
+                    experience.
+                </p>
+
+                <div class="hero-features">
+
+                    <div>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Secure account creation
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Strong password protection
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Reliable Firebase security
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <p class="hero-footer">
+                © 2026 SecureAuth. All rights reserved.
+            </p>
+
+        </section>
+
+
+        <!-- RIGHT SECTION -->
+
+        <section class="form-section">
+
+            <div class="login-card">
+
+                <!-- MOBILE BRAND -->
+
+                <div class="mobile-brand">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+                    SecureAuth
+
+                </div>
+
+
+                <!-- HEADING -->
+
+                <div class="welcome-text">
+
+                    <span class="welcome-tag">
+                        GET STARTED
+                    </span>
+
+                    <h2>Create your account</h2>
+
+                    <p>
+                        Fill in your details to create your new account.
+                    </p>
+
+                </div>
+
+
+                <form id="signupForm">
+
+
+                    <!-- FULL NAME -->
+
+                    <div class="form-group">
+
+                        <label for="fullName">Full Name</label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-regular fa-user"></i>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                                minlength="2"
+                                maxlength="80"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label for="email">Email Address</label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-regular fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="name@example.com"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="form-group">
+
+                        <label for="password">Password</label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Create a strong password"
+                                autocomplete="new-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="toggle-password"
+                                data-target="password"
+                                aria-label="Show password"
+                            >
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+
+                        </div>
+
+
+                        <!-- PASSWORD STRENGTH -->
+
+                        <div class="password-strength">
+
+                            <div class="strength-track">
+
+                                <span id="strengthBar"></span>
+
+                            </div>
+
+                            <p id="strengthText">
+                                Password strength: Not entered
+                            </p>
+
+                        </div>
+
+
+                        <!-- PASSWORD RULES -->
+
+                        <div class="password-rules">
+
+                            <p id="ruleLength">
+                                <i class="fa-regular fa-circle"></i>
+                                At least 8 characters
+                            </p>
+
+                            <p id="ruleUpper">
+                                <i class="fa-regular fa-circle"></i>
+                                One uppercase letter
+                            </p>
+
+                            <p id="ruleLower">
+                                <i class="fa-regular fa-circle"></i>
+                                One lowercase letter
+                            </p>
+
+                            <p id="ruleNumber">
+                                <i class="fa-regular fa-circle"></i>
+                                One number
+                            </p>
+
+                            <p id="ruleSpecial">
+                                <i class="fa-regular fa-circle"></i>
+                                One special character
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONFIRM PASSWORD -->
+
+                    <div class="form-group">
+
+                        <label for="confirmPassword">
+                            Confirm Password
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                placeholder="Confirm your password"
+                                autocomplete="new-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="toggle-password"
+                                data-target="confirmPassword"
+                                aria-label="Show password"
+                            >
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TERMS -->
+
+                    <div class="form-options">
+
+                        <label class="remember">
+
+                            <input type="checkbox" id="terms" required>
+
+                            <span>
+                                I agree to the Terms & Conditions.
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- MESSAGE -->
+
+                    <div id="message" class="message"></div>
+
+
+                    <!-- SIGNUP BUTTON -->
+
+                    <button
+                        type="submit"
+                        id="signupBtn"
+                        class="primary-btn"
+                    >
+
+                        <span id="btnText">Create Account</span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+                </form>
+
+
+                <!-- LOGIN REDIRECT -->
+
+                <div class="signup-link">
+
+                    Already have an account?
+
+                    <a href="index.html">Sign in</a>
+
+                </div>
+
+
+                <!-- SECURITY NOTE -->
+
+                <div class="secure-note">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    Your information is protected with Firebase Authentication.
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script type="module" src="./signup.js"></script>
+
+</body>
+
+</html>
